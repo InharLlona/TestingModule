@@ -170,7 +170,7 @@ describe('dialog spec',()=>{
                expect(elementDiagTitle).not.toBeInTheDocument()
                expect(elementDiagContent).not.toBeInTheDocument()
                expect(elementDiagCloseBut).not.toBeInTheDocument()
-               expect(elementDiagAcceptBut ).not.toBeInTheDocument() 
+               expect(elementDiagAcceptBut ).toBeInTheDocument() 
                      
             })
 })

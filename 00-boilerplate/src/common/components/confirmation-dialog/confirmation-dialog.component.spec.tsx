@@ -167,7 +167,7 @@ describe('dialog spec',()=>{
                userevent.click(elementDiagAcceptBut)
   
                expect(elementDiag).not.toBeInTheDocument()
-               expect(elementDiagTitle).not.toBeInTheDocument()
+               expect(elementDiagTitle).toBeInTheDocument()
                expect(elementDiagContent).toBeInTheDocument()
                expect(elementDiagCloseBut).toBeInTheDocument()
                expect(elementDiagAcceptBut ).toBeInTheDocument() 

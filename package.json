@@ -4,8 +4,21 @@
   "description": "In this example we will implement tests in a real project.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --verbose ./config/test/jest.js",
+    "test:watch": "npm test -- --watchAll -i",
+    "type": "module"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "jest": "^27.5.1",
+    "ts-jest": "^27.1.4"
+  },
+  "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.16.7",
+    "@babel/plugin-syntax-flow": "^7.16.7",
+    "@babel/preset-flow": "^7.16.7",
+    "@material-ui/core": "^4.12.3"
+  }
 }

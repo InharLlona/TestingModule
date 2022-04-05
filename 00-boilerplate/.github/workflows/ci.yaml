@@ -1,0 +1,14 @@
+name: CI workflow
+
+on: pull_request
+
+jobs:
+  ci:
+    runs-on: windows-2019
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Install
+        run: npm install
+      - name: Tests
+        run: npm test
